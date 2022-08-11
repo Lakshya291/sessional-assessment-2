@@ -10,63 +10,17 @@ xhr.onload = function () {
 		// console.log(response);
 
 		let template = "";
-		for (let i = 0; i < 1000; i = i + 50) {
+		for (let i = 0; i < response.length; i++) {
 			template += `
-					<div class="container photos mt-3 p-3" style="background-color:#DFFCFB">
-					<h5 class="">Album ${response[i].albumId}</h5>
+			<div class="card m-5" style="width: 18rem">
+				<img src="${response[i].thumbnailUrl}" loading="lazy" class="card-img-top py-3 px-2" alt="..." />
+				<div class="card-body">
+					<h5 class="card-title"> ${response[i].id}. ${response[i].title} </h5>
+					<a href="${response[i].url}" class="btn btn-primary">Go somewhere</a>
+				</div>
+		</div>
 
-						<div class="row my-2">
-							<div class="col-sm-2 text-sm-end pe-4">
-							<img src="${response[i].thumbnailUrl}" alt="" />
-							</div>
-							
-							<div class="col-sm-2 text-sm-end pe-4">
-							<img src="${response[i + 1].thumbnailUrl}" alt="" />
-							</div>
-							
-							<div class="col-sm-2 text-sm-end pe-4">
-							<img src="${response[i + 2].thumbnailUrl}" alt="" />
-							</div>
-							
-							<div class="col-sm-2 text-sm-end pe-4">
-							<img src="${response[i + 3].thumbnailUrl}" alt="" />
-							</div>
-							
-							<div class="col-sm-2 text-sm-end pe-4">
-							<img src="${response[i + 4].thumbnailUrl}" alt="" />
-							</div>
-
-							<div class="col-sm-2 text-sm-end pe-4">
-							<img src="${response[i + 5].thumbnailUrl}" alt="" />
-							</div>
-						</div>
-						<div class="row my-2">
-							
-							<div class="col-sm-2 text-sm-end pe-4">
-							<img src="${response[i + 6].thumbnailUrl}" alt="" />
-							</div>
-							
-							<div class="col-sm-2 text-sm-end pe-4">
-							<img src="${response[i + 7].thumbnailUrl}" alt="" />
-							</div>
-							
-							<div class="col-sm-2 text-sm-end pe-4">
-							<img src="${response[i + 8].thumbnailUrl}" alt="" />
-							</div>
-							
-							<div class="col-sm-2 text-sm-end pe-4">
-							<img src="${response[i + 9].thumbnailUrl}" alt="" />
-							</div>
-
-							<div class="col-sm-2 text-sm-end pe-4">
-							<img src="${response[i + 10].thumbnailUrl}" alt="" />
-							</div>
-
-							<div class="col-sm-2 text-sm-end pe-4">
-							<img src="${response[i + 11].thumbnailUrl}" alt="" />
-							</div>
-						</div>
-					</div>
+					
 				`;
 
 			// console.log(response[i]);
