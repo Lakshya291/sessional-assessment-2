@@ -25,7 +25,7 @@ Connect: Join a community of like-minded individuals who appreciate the beauty o
 
 Embark on a journey of discovery, expression, and connection with our Gallery Post Blog. Your story awaits a place among the vibrant tapestry of our digital gallery.
 
-Visit Sessional Assessment 2 - Gallery Post Blog and start your exploration today!
-https://lakshya291.github.io/sessional-assessment-2/
+Visit Sessional Assessment 2 - [Gallery Post Blog](https://lakshya291.github.io/sessional-assessment-2/) and start your exploration today!
+
 
 
